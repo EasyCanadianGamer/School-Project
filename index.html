@@ -8,6 +8,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+<script src="https://kit.fontawesome.com/bff2612eb8.js" crossorigin="anonymous"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="index.css">
 <title> School Project!</title>
@@ -60,9 +62,12 @@
       </div>
      
         <main id="content" >
-          <div class="flex-lg-row">
-            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+          <div class="flex-lg-row text-center">
+            <button  type="button" class="btn btn-primary btn-lg" onclick="signIn()"> <i class='fab fa-google'></i> Sign in!</button>
           </div>
+
+          <br>
+
           <div class="row">
             <div class="col-md-4">
 
@@ -119,12 +124,18 @@
 
 </div>
 
-<script src="index.js" > </script>
+<script type="text/javascript" src="index.js"> </script>
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+   <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+   <!-- Add Firebase products that you want to use -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -139,6 +150,9 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+
+  
+  
 
 </body>
 </html>
