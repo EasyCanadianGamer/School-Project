@@ -1,5 +1,8 @@
 
 
+$( document ).ready(function() {
+	$("#welcome").hide();
+});
 
 
 function signIn(){
@@ -34,4 +37,9 @@ function signIn(){
   });
 
   console.log("signed in!")
+}
+
+
+function test(){
+  console.log("Fuck off Bitch!")
 }

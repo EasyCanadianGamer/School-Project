@@ -18,13 +18,13 @@
 
  
 
-  <div calss="cotainer"> 
+  <div calss="cotainer" > 
 
          
         <div class="header"> 
-            <div class="row">   
+            <div class="row" >   
                 <div class="col-md-12"> 
-              <nav class="navbar navbar-expand-md navbar-custom navbar-dark"> 
+              <nav class="navbar navbar-expand-md navbar-custom navbar-dark" id="sign-in"> 
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html">Navbar</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +45,41 @@
                         <a class="nav-link" href="about.html">About Page</a>
                       </li>
                     </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-auto"> 
+                      <div class="flex-lg-row text-center" >
+                        <button  type="button" class="btn btn-primary btn-lg" onclick="signIn()"> <i class='fab fa-google'></i> Sign in!</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+              <nav class="navbar navbar-expand-md navbar-custom navbar-dark" id="welcome"> 
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-pills nav-fill">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="chat.html">Chat</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="file.html">Your Files</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Page</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-auto"> 
+                      <div class="flex-lg-row text-center" >
+                        <button  type="button" class="btn btn-primary btn-lg" onclick="test()">  Sign in!</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </nav>
@@ -62,11 +97,8 @@
       </div>
      
         <main id="content" >
-          <div class="flex-lg-row text-center">
-            <button  type="button" class="btn btn-primary btn-lg" onclick="signIn()"> <i class='fab fa-google'></i> Sign in!</button>
-          </div>
 
-          <br>
+
 
           <div class="row">
             <div class="col-md-4">
