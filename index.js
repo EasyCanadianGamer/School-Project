@@ -21,6 +21,7 @@ function signIn(){
     }
     // The signed-in user info.
     var user = result.user;
+    console.log(user.displayName);
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;

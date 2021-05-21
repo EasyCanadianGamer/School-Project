@@ -1,3 +1,28 @@
 body{
     background-color: rgb(129, 205, 255);
 }
+
+
+span{
+    font-size: xx-small;
+}
+
+.navbar-custom {
+    background-color: #0271cc;
+}
+
+
+h1{
+    font-family:  'Raleway', sans-serif;
+    color:whitesmoke;
+}
+
+#jumbo{
+    background-color: rgb(5, 189, 202);
+}
+
+
+img{
+    width: 500px;
+    height: 500px;
+}
