@@ -1,4 +1,5 @@
-
+var provider = new firebase.auth.GoogleAuthProvider();
+var user = result.user;
 
 $( document ).ready(function() {
 	$("#welcome").hide();
@@ -7,7 +8,7 @@ $( document ).ready(function() {
 
 function signIn(){
   
-  var provider = new firebase.auth.GoogleAuthProvider();
+
 
   firebase.auth().signInWithRedirect(provider);
 
@@ -23,8 +24,7 @@ function signIn(){
       // ...
     }
     // The signed-in user info.
-    var user = result.user;
-    console.log(user.displayName);
+    user = result.user;
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
