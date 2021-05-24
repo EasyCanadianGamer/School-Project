@@ -1,5 +1,4 @@
-var provider = new firebase.auth.GoogleAuthProvider();
-var user = result.user;
+
 
 $( document ).ready(function() {
 	$("#welcome").hide();
@@ -7,6 +6,9 @@ $( document ).ready(function() {
 
 
 function signIn(){
+
+var provider = new firebase.auth.GoogleAuthProvider();
+var user = result.user;
   
 
 
