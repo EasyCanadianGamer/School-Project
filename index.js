@@ -27,6 +27,7 @@ var provider = new firebase.auth.GoogleAuthProvider();
     }
     // The signed-in user info.
     var user = result.user;
+    showWelcomeContainer();
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
