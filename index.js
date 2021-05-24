@@ -50,7 +50,6 @@ function test(){
 
 
 function showWelcomeContainer() {
-	$("#login").hide();
+	$("#sign-in").hide();
 	$("#welcome").show();
-	$("#welcomeText").html("Hello, " + user.displayName);
 };
