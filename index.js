@@ -46,3 +46,11 @@ function showWelcomeContainer() {
 	$("#sign-in").hide();
 	$("#welcome").show();
 };
+
+
+
+
+firebase.database().ref('Users/' + user.uid).set({
+  name: user.displayName,
+  email: user.email
+  });
