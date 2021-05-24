@@ -22,7 +22,7 @@ firebase.auth()
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = credential.accessToken;
   // The signed-in user info.
-   user = result.user;
+  user= result.user;
   showWelcomeContainer();
   // ...
 }).catch((error) => {
@@ -44,6 +44,29 @@ function test(){
   console.log("Fuck off Bitch!")
 }
 
+var user = firebase.auth().currentUser;
+var names, email, photoUrl, uid, emailVerified;
+if (user != null) {
+	names = user.displayName;
+	email = user.email;
+	photoUrl = user.photoURL;
+	emailVerified = user.emailVerified;
+	uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+					 // this value to authenticate with your backend server, if
+					 // you have one. Use User.getToken() instead.
+  }
+
+var database = firebase.database();
+
+function writeUserData() {
+	database.ref('users/' + userId).set({
+	  username: names,
+	  email: email,
+	  profile_picture : photoUrl,
+	  userID: uid
+	});
+  }
+  
 
 
 function showWelcomeContainer() {
