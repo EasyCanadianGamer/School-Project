@@ -8,7 +8,7 @@ $( document ).ready(function() {
 function signIn(){
 
 var provider = new firebase.auth.GoogleAuthProvider();
-var user = result.user;
+
   
 
 
@@ -26,7 +26,7 @@ var user = result.user;
       // ...
     }
     // The signed-in user info.
-    user = result.user;
+    var user = result.user;
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
