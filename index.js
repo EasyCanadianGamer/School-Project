@@ -43,3 +43,11 @@ function signIn(){
 function test(){
   console.log("Fuck off Bitch!")
 }
+
+
+
+function showWelcomeContainer() {
+	$("#login").hide();
+	$("#welcome").show();
+	$("#welcomeText").html("Hello, " + user.displayName);
+};
