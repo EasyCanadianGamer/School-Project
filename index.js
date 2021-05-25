@@ -1,4 +1,24 @@
 
+ window.onload = function() {
+
+	 // Your web app's Firebase configuration
+	 var firebaseConfig = {
+		apiKey: "AIzaSyCt6kc6PI_JvRBJShbNmH92UILDnx1EaxU",
+		authDomain: "chat-7baef.firebaseapp.com",
+		projectId: "chat-7baef",
+		storageBucket: "chat-7baef.appspot.com",
+		messagingSenderId: "91420429295",
+		appId: "1:91420429295:web:0515cebc1e6f615788841a"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+ } 
+ 
+
+
+
+
+
 
 $( document ).ready(function() {
 	$("#welcome").hide();
@@ -39,7 +59,13 @@ firebase.auth()
   console.log("signed in!")
 }
 
-
+function signOut(){
+	firebase.auth().signOut().then(() => {
+		// Sign-out successful.
+	  }).catch((error) => {
+		// An error happened.
+	  });
+}
 function test(){
   console.log("Fuck off Bitch!")
 }
